@@ -1,0 +1,635 @@
+:root{
+    --Intro-And-Email-Sign-Up-Background-: 217, 28%, 15%;
+    --Main-Background-: 218, 28%, 13%;
+    --Footer-Background-: 216, 53%, 9%;
+    --Testimonials-Background-: 219, 30%, 18%;
+    --Cyan-Inside-Call-To-Action-Gradient-: 176, 68%, 64%;
+    --Blue-Inside-Call-To-Action-Gradient-: 198, 60%, 50%;
+    --LightRedError-: 0, 100%, 63%;
+    --White-: 0, 0%, 100%;
+    --font-: 'Raleway', sans-serif;
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+*::before, *::after{
+    box-sizing: border-box;
+}
+
+body, div, p, img, a, button, input{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: hsl(var(--Intro-And-Email-Sign-Up-Background-));
+    width: 100%;
+}
+.logoNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px ;
+}
+.nav > a{
+    color: hsl(var(--White-));
+    margin-left: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.7s ease-in-out;
+    font-weight: lighter;
+}
+.nav > a:hover{
+    border-bottom: 1px solid hsl(var(--White-));
+}
+.header > .img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro{
+    background-image: url(./images/bg-curvy-desktop.svg); 
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+.intro > p:nth-child(1){
+    font-size: 42px;
+    text-align: center;
+    max-width: 700px;
+    color: hsl(var(--White-));
+    margin-top: -50px;
+    margin-bottom: 40px;
+    font-family: var(--font-);
+    line-height: 60px;
+}
+.intro > p:nth-child(2){
+    font-size: 24px;
+    color: hsl(var(--White-));
+    max-width: 660px;
+    text-align: center;
+    font-weight: lighter;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+.intro > button{
+    background: linear-gradient(to right, rgb(101, 226, 217), rgb(51, 158, 204));
+    color: hsl(var(--White-));
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 120px;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+}
+.intro > button:hover{
+    background: rgb(101, 226, 217);
+}
+.aboutUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 200px;
+    background-color: hsl(var(--Main-Background-));
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.aboutBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+.aboutBox > img{
+    margin-bottom: 25px;
+}
+.aboutBox > p:nth-child(2){
+    color: hsl(var(--White-));
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family:var(--font-);
+    margin-bottom: 10px;
+}
+.aboutBox > p:nth-child(3){
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: hsl(var(--White-));
+    text-align: center;
+    font-size: 14px;
+    text-align: center;
+    max-width: 400px;
+}
+.productive{
+    background-color: hsl(var(--Main-Background-));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+.image > img{
+    width: 550px;
+}
+.text{
+    margin-left: 50px;
+}
+.text > p:nth-child(1){
+    color: hsl(var(--White-));
+    max-width: 400px;
+    font-size: 42px;
+    font-family: var(--font-);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.text > p:nth-child(2){
+    color: hsl(var(--White-));
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+.text > p:nth-child(3){
+    color: hsl(var(--White-));
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 530px;
+    margin-bottom: 20px;
+}
+.link{
+    max-width: 200px;
+}
+.link > a{
+    padding-bottom: 10px;
+    color: hsl(var(--Cyan-Inside-Call-To-Action-Gradient-));
+    text-decoration: none;
+    border-bottom: 1px solid hsl(var(--Cyan-Inside-Call-To-Action-Gradient-));
+    transition: all 0.7s ease-in-out;
+}
+.link > a:hover{
+    border-bottom: 1px solid hsl(var(--White-));
+    color: hsl(var(--White-));
+}
+.testimony{
+    background-color: hsl(var(--Main-Background-));
+    padding: 0px 100px 200px;
+}
+.testimony > img{
+    margin-left: 5px;
+}
+.testiB{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testiBox{
+    background-color: hsl(var(--Testimonials-Background-));
+    margin: 0px 20px;
+    padding: 30px 25px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: -15px;
+    border-radius: 2px
+}
+.testiBox > p{
+    margin-bottom: 25px;
+    color: hsl(var(--White-));
+    font-size: 14px;
+}
+.info{
+    display: flex;
+    align-items: center;
+
+}
+.info > img{
+    border-radius: 50%;
+    width: 30px;
+}
+.name{
+    color: hsl(var(--White-));
+    margin-left: 10px;
+}
+.name > p:nth-child(1){
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: var(--font-);
+}
+.name > p:nth-child(2){
+    font-size: 8px;
+    letter-spacing: 1px;
+}
+.footer{
+    background-color: hsl(var(--Footer-Background-));
+    padding: 200px 50px 150px;
+    color: hsl(var(--White-));
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer > img{
+    margin-bottom: 50px;
+}
+.command{
+    display: flex;
+    align-items: baseline;
+    justify-content:space-between;
+}
+.float{
+    max-width: 300px;
+}
+.float > img{
+    float: left;
+}
+.float > p{
+    margin-left: 50px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.flexStart{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.flexStart > a{
+    text-decoration: none;
+    color: hsl(var(--White-));
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.flexStart > a:hover{
+    font-weight: 700;
+}
+.getAccess{
+    background-color: hsl(var(--Intro-And-Email-Sign-Up-Background-)) ;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: -720px auto 0px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.468);
+    padding: 30px;
+}
+.getAccess > p:nth-child(1){
+    font-size: 42px;
+    font-family: var(--font-);
+    color: white;
+    margin-bottom: 25px;
+}
+.getAccess > p:nth-child(2){
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+.inputButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.inputButton > input{
+    width: 430px;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    margin-right: 10px;
+    outline: none;
+}
+.inputButton > input::placeholder{
+    padding-left: 20px;
+}
+.inputButton > button{
+    background: linear-gradient(to right, rgb(101, 226, 217), rgb(51, 158, 204));
+    color: hsl(var(--White-));
+    width: 200px;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+}
+.inputButton > button:hover{
+    background: rgb(101, 226, 217);
+}
+.getAccess > p:nth-child(4){
+    color: hsl(var(--LightRedError-));
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: -450px;
+    display: none;
+}
+
+
+
+
+@media (max-width: 425px){
+    .container{
+        width: 100%;
+    }
+    .logoNav{
+        padding: 15px;
+    }
+    .logoNav > img{
+        width: 70px;
+    }
+    .nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .header > .img > img{
+        width: 80%;
+        margin-top: 25px;
+    }
+    .intro{
+        background-image: url(./images/bg-curvy-mobile.svg);
+    
+    }
+    .intro > p:nth-child(1){
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .intro > p:nth-child(2){
+        font-size: 18px;
+        max-width: 340px;
+        margin-bottom: 25px;
+    }
+    .aboutUs{
+        flex-direction: column;
+        padding: 0;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .aboutBox > p:nth-child(3){
+        max-width: 305px;
+    }
+    .productive{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .image{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .productive > .image > img{
+        width: 320px;
+    }
+    .text{
+        margin: 0;
+    }
+    .text > p:nth-child(1){
+        font-size: 20px;
+        text-align: center;
+    }
+    .text > p:nth-child(2){
+        text-align: left;
+        font-size: 14px;
+        max-width: 340px;
+        font-size: 16px;
+    }
+    .text > p:nth-child(3){
+        text-align: left;
+        font-size: 14px;
+        max-width: 340px;
+        font-size: 16px;
+    }
+    .link > a{
+        font-size: 14px;
+        padding-bottom: 5px;
+    }
+    .testimony{
+        padding: 50px 50px 300px 50px;
+    }
+    .testimony > img{
+        width: 30px;
+    }
+    .testiB{
+        flex-direction: column;
+
+    }
+    .testiBox{
+        margin: -5px 0 30px 0;
+    }
+    .inputButton{
+        flex-direction: column;
+    }
+    .inputButton > input{
+        width: 270px;
+        margin-bottom: 20px;
+    }
+    .inputButton > button{
+        width: 270px;
+        padding: 0;
+        margin-right: 15px;
+    }
+    .getAccess{
+        width: fit-content;
+        margin-top: -1200px;
+    }
+    .getAccess > p:nth-child(1){
+        font-size: 24px;
+    }
+    .getAccess > p:nth-child(2){
+        max-width: 260px;
+    }
+    .getAccess > p:nth-child(4){
+        margin: 5px 0 0 -50px;
+    }
+    .footer{
+        padding: 250px 30px 40px 30px;
+    }
+    .command{
+        flex-direction: column;
+    }
+    .command > div:nth-child(2){
+        margin-bottom: 50px;
+    }
+    .command > div:nth-child(3){
+        margin-bottom: 50px;
+    }
+    .command > div:nth-child(4){
+        margin-bottom: 50px;
+    }
+    .flexStart{
+        flex-direction: column;
+    }
+    .social{
+        margin: 0px auto;
+    }
+    .social > img{
+        margin: 0 5px 0px 5px;
+    }
+}
+
+@media (max-width: 320px){
+    .container{
+        width: 100%;
+    }
+    .logoNav{
+        padding: 20px;
+    }
+    .logoNav > img{
+        width: 70px;
+    }
+    .nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .nav > a{
+        margin-left: 20px;
+    }
+    .header > .img > img{
+        width: 80%;
+        margin-top: 25px;
+    }
+    .intro{
+        background-image: url(./images/bg-curvy-mobile.svg);
+    
+    }
+    .intro > p:nth-child(1){
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .intro > p:nth-child(2){
+        font-size: 18px;
+        max-width: 340px;
+        margin-bottom: 25px;
+    }
+    .aboutUs{
+        flex-direction: column;
+        padding: 0;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .aboutBox > p:nth-child(3){
+        max-width: 305px;
+    }
+    .productive{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .image{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .productive > .image > img{
+        width: 320px;
+    }
+    .text{
+        margin: 0;
+    }
+    .text > p:nth-child(1){
+        font-size: 20px;
+        text-align: center;
+    }
+    .text > p:nth-child(2){
+        text-align: left;
+        font-size: 14px;
+        max-width: 340px;
+        font-size: 16px;
+    }
+    .text > p:nth-child(3){
+        text-align: left;
+        font-size: 14px;
+        max-width: 340px;
+        font-size: 16px;
+    }
+    .link > a{
+        font-size: 14px;
+        padding-bottom: 5px;
+    }
+    .testimony{
+        padding: 50px 50px 300px 50px;
+    }
+    .testimony > img{
+        width: 30px;
+    }
+    .testiB{
+        flex-direction: column;
+
+    }
+    .testiBox{
+        margin: -5px 0 30px 0;
+    }
+    .inputButton{
+        flex-direction: column;
+    }
+    .inputButton > input{
+        width: 220px;
+        margin-bottom: 20px;
+    }
+    .inputButton > button{
+        width: 220px;
+    }
+    .getAccess{
+        width: fit-content;
+        margin-top: -1200px;
+    }
+    .getAccess > p:nth-child(1){
+        font-size: 20px;
+    }
+    .getAccess > p:nth-child(2){
+        max-width: 240px;
+    }
+    .getAccess > p:nth-child(4){
+        margin: 5px 0 0 -50px;
+    }
+    .footer{
+        padding: 250px 30px 40px 30px;
+    }
+    .command{
+        flex-direction: column;
+    }
+    .command > div:nth-child(2){
+        margin-bottom: 50px;
+    }
+    .command > div:nth-child(3){
+        margin-bottom: 50px;
+    }
+    .command > div:nth-child(4){
+        margin-bottom: 50px;
+    }
+    .flexStart{
+        flex-direction: column;
+    }
+    .social{
+        margin: 0px auto;
+    }
+    .social > img{
+        margin: 0 5px 0px 5px;
+    }
+}
